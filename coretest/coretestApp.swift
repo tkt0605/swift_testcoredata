@@ -14,8 +14,9 @@ struct coretestApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            //previewでは、一時的な保存用のものであるので本番本尊ではsharedを用いる。
+            
+            TodoListView(context: persistenceController.container.viewContext)
         }
     }
 }

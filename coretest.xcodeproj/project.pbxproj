@@ -15,6 +15,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				README.md,
 			);
 			target = 4E47D7082EA5F8550075F1DC /* coretest */;
 		};
